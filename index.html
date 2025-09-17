@@ -12,19 +12,19 @@
     <!--<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">-->
 </head>
 <body>
-    <header class="header" id="header">
+    <header class="header">
         <div class="header__top" id="header__top"> 
             <div class="container">
                 <a href="" class="logo"><img src="images/Logo.svg" alt="" class=""></a>
                 <nav class="nav">
                     <ul class="menu">
-                        <li class="menu_list"><a href="#" class="menu__link">Головна</a></li>
-                        <li class="menu_list"><a href="#" class="menu__link">Про нас</a></li>
-                        <li class="menu_list"><a href="#" class="menu__link">Послуги</a></li>
-                        <li class="menu_list"><a href="#" class="menu__link">Тарифи</a></li>
-                        <li class="menu_list"><a href="#" class="menu__link">Запитання</a></li>
-                        <li class="menu_list"><a href="#" class="menu__link">Продукти</a></li>
-                        <li class="menu_list"><a href="#" class="menu__link">Блог</a></li>
+                        <li class="menu_list"><a href="#" data-scroll="#header" class="menu__link">Головна</a></li>
+                        <li class="menu_list"><a href="#" data-scroll="#service" class="menu__link">Послуги</a></li>
+                        <li class="menu_list"><a href="#" data-scroll="#pricing" class="menu__link">Тарифи</a></li>
+                        <li class="menu_list"><a href="#" data-scroll="#faq" class="menu__link">Запитання</a></li>
+                        <li class="menu_list"><a href="#" data-scroll="#products" class="menu__link">Продукти</a></li>
+                        <li class="menu_list"><a href="#" data-scroll="#blog" class="menu__link">Блог</a></li>
+                        <li class="menu_list"><a href="#" data-scroll="#contact" class="menu__link">Контакти</a></li>
                     </ul>
                 </nav>
                 <div class="icon">
@@ -46,19 +46,19 @@
                 <div id="myNav" class="overlay">
                     <div class="container">
                         <div class="overlay-content">
-                            <a href="#">Головна</a>
-                            <a href="#">Про нас</a>
-                            <a href="#">Послуги</a>
-                            <a href="#">Тарифи</a>
-                            <a href="#">Запитання</a>
-                            <a href="#">Продукти</a>
-                            <a href="#">Блог</a>
+                            <a href="#" data-scroll="#header">Головна</a>
+                            <a href="#" data-scroll="#service">Послуги</a>
+                            <a href="#" data-scroll="#pricing">Тарифи</a>
+                            <a href="#" data-scroll="#faq">Запитання</a>
+                            <a href="#" data-scroll="#products">Продукти</a>
+                            <a href="#" data-scroll="#blog">Блог</a>
+                            <a href="#" data-scroll="#contact">Контакти</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="header__content">
+        <div class="header__content" id="header">
             <div class="header_background"> 
                 <img src="images/Photo.png" alt="" class="header_photo">
             </div>
@@ -87,7 +87,7 @@
         </div>
     </header>
     <main>
-        <section class="service">
+        <section class="service" id="service">
             <div class="container">
                 <div class="service__accent">
                     <div class="accent">
@@ -185,7 +185,7 @@
         </section>
         <section class="pricing-faq">
             <div class="container">
-                <div class="pricing">
+                <div class="pricing" id="pricing">
                     <div class="section__header">
                         <div>
                             <h1 class="title">Наші <span class="highlight">Найкращі Ціни</span> Для Вас</h1>
@@ -236,7 +236,7 @@
                     </div>
                 </div>
                 <div class="pricing-faq_banner"><p>OCLANET.COM</p></div>
-                <div class="faq">
+                <div class="faq" id="faq">
                     <div class="faq_title">
                         <h1 class="title">Наш Розділ <span class="highlight">"Часті Запитання"</span> Для Вас!</h1>
                         <h3 class="faq_description">Тут ми відповідаємо на найпоширеніші запитання</h3>
@@ -270,7 +270,7 @@
         </section>
         <section class="products-blog">
             <div class="container">
-                <div class="products">
+                <div class="products" id="products">
                     <div class="section__header">
                         <div>
                             <h1 class="title"><span class="highlight">Продукт</span>, який ми продаємо</h1>
@@ -351,7 +351,7 @@
                     </div>
                 </div>
 
-                <div class="blog">
+                <div class="blog" id="blog">
                     <div class="section__header">
                         <div>
                             <h1 class="title">Наш останній <span class="highlight">блог</span></h1>
@@ -397,7 +397,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer id="contact">
             <div class="container">
                 <div class="footer__connection">
                     <div class="footer_subscription">
