@@ -122,14 +122,18 @@ header {
     transition: 0.4s;
 }
 .overlay-open{ height: 100%; }
+.overlay>.container {
+    position: relative;
+}
 .overlay-content {
     background-color: #E4041D;
     border-radius: 5px;
-    position: relative;
-    top: 10%;
+    position: absolute;
+    top: 80px;
     width: fit-content;
-    margin-top: 80px;
+    right: 0;
     padding: 5px 0;
+    margin-right: 10px;
     margin-left: auto;
 }
 .overlay a, .overlay h4 {
@@ -152,6 +156,7 @@ position: relative;
 text-decoration: none;
 z-index:10;
 }
+
 @media screen and (max-height: 450px) {
   .overlay {overflow-y: auto;}
   .overlay a {font-size: 20px}
@@ -850,9 +855,6 @@ footer>.container {
     }
     .header__top>.container {
         height: 60px;
-    }
-    .overlay-content {
-        margin-top: 70px;
     }
     .icon {
         width: 150px;

@@ -31,11 +31,6 @@ $(window).on("scroll", function(){
 
 
 
-
-
-
-
-
     
 const slider = document.querySelector('.slider');
 slider.addEventListener('wheel', (evt) => {
@@ -60,4 +55,14 @@ $( ".open-close-btn" ).on('click touchstart', function(e) {
     e.preventDefault();
     $(".overlay").toggleClass("overlay-open");
     $("#hamburger-icon").toggleClass("hamburger-open");
+    $("#myNav").toggleClass("nav-open");   
 });
+$("#myNav").on('click', function(e) {
+    // перевірка: якщо клікнули саме по myNav, а не по його дітях (.overlay-content)
+    if ($(e.target).is("#myNav")) {
+        $(".overlay").removeClass("overlay-open");
+        $("#hamburger-icon").removeClass("hamburger-open");
+        $("#myNav").removeClass("nav-open");
+    }
+});
+  
